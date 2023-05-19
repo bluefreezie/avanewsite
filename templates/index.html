@@ -23,18 +23,23 @@
                 <a class="navbar-brand" href="#page-top">  
                     <img class="image-default" src="{{url_for('static',filename='img/logos/Avanew_Logo-removebg-white.png') }}" alt="Default Image" />
                     <img class="image-hover" src="{{url_for('static',filename='img/logos/Avanew_Logo-removebg.png') }}" alt="Hover Image" />
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> -->
+                    <button class="navbar-toggler order-lg-last ms-6" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-5 py-lg-0">
+                    <i class="fas fa-bars ms-1"></i> 
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase me-5 ms-auto py-5 py-lg-0">
+                    <!-- <ul class="navbar-nav mr-auto">-->
                         <li class="nav-item"><a class="nav-link" href="#services"></a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Assets</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     </ul>
-                </div>
+                    </div>
+                </a>
             </div>
         </nav>
         <!-- Masthead-->
@@ -597,7 +602,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Fund I</h2>
                                     <p class="item-intro text-muted">Southern Ontario</p>
-                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/portfolio/Fund1Map.png')}}" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/portfolio/2.jpg')}}" alt="..." />
                                     <p>Currently, a total of 95 individual assets have been purchased and renovated, all strategically located in Southern Ontario. These properties account for a substantial count of 230 individual rental units, with the typical asset housing two units. This reflects a keen focus on maximizing value and enhancing the portfolio within the thriving Southern Ontario real estate market.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -621,7 +626,7 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Fund II</h2>
-                                    <p class="item-intro text-muted">Northen and Southern Ontario</p>
+                                    <p class="item-intro text-muted">Northern and Southern Ontario</p>
                                     <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/portfolio/3.jpg')}}" alt="..." />
                                     <p>Presently, a portfolio of 234 assets spans both Northern and Southern Ontario, representing a cumulative 324 rental units, a testament locally diverse investment strategy. As the dynamic Ontario real estate market continues to present new opportunities, measures are being made to expand the portfolio with additional acquisitions. This upcoming phase promises to inject fresh growth and offer exciting potential for value creation in the burgeoning real estate landscape.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
