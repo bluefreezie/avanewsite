@@ -67,6 +67,42 @@ function onCounterVisible(callback) {
     counters.forEach(counter => observer.observe(counter));
 }
 
+// Function to slide diamond when user scrolls to it
+function slideDiamond() {
+    var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    window.addEventListener('scroll', function() {
+        var diamond = document.querySelector('.blue-diamond');
+        var wdiamond = document.querySelector('.white-diamond');
+        var fadeimage = document.querySelector('.impact-image');
+        var diamondTop = diamond.getBoundingClientRect().top;
+        var diamondBottom = diamond.getBoundingClientRect().bottom;
+        var windowHeight = window.innerHeight;
+        var st = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Check if diamond has come into view while scrolling down
+        if (diamondTop < windowHeight && st > lastScrollTop) {
+            diamond.style.left = '0';
+            diamond.style.visibility = 'visible';
+            wdiamond.style.left = '-100px';
+            wdiamond.style.visibility = 'visible';
+            fadeimage.style.visibility = 'hidden';
+        } 
+/*
+        // Check if diamond is out of view while scrolling up
+        else if (st < lastScrollTop ) {
+            diamond.style.left = '-100%';
+            diamond.style.visibility = 'hidden';
+        }
+*/
+        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    });
+}
+
+slideDiamond();
+
+
+// Counter Animation
 function startAnimation() {
     function animateCounter() {
         const counters = document.querySelectorAll('.counter');
