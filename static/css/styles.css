@@ -5447,7 +5447,7 @@ textarea.form-control-lg {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-
+  align-items: center;
   padding: var(--bs-modal-padding);
 }
 
@@ -11439,32 +11439,50 @@ padding-top: 2rem;
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
+.table {
+    width: 100%;
+    margin: 0px 0;
+    border-collapse: collapse;
+    align-self: center;
+    align-items: center;
+    padding-bottom:  3rem;
+}
+
+.table td {
+    padding-bottom:  0rem;
+    border: 1px solid #ddd;
+}
+
+
+/** IMPACT **/
 
 .impact{
-height: 300px;
+
 }
 
 
 .impact .blue-diamond {
-  width: 300px;
-  height: 300px;
-  background: blue;
+  width: 100px;
+  height: 100px;
+  padding-top: 100px;
+
+  background-color: #3D9BE9;
   transform: rotate(45deg);
   position: absolute;
-  left: -300px;
-  transition: 1s;
+  left: -100px;
+  transition: 3s;
   visibility: hidden;
   z-index: 1;
 }
 
 .impact .white-diamond {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   background: white;
   transform: rotate(45deg);
   position: absolute;
-  left: -400px;
-  transition: 1s;
+  left: -150px;
+  transition: 3s;
   visibility: hidden;
   z-index: 2;
 
@@ -11472,15 +11490,169 @@ height: 300px;
 
 .impact .impact-image img{
   width: 20rem;
-  left: 20rem;
+  left: 5rem;
   z-index: 3;
   padding-bottom: 0;
   padding-top: 0;
-  position: absolute;
-  transition: 1s;
+  top: -3rem;
+  position: relative;
   visibility: visible;
+  transition: 3s;
 }
 
+
+
+.fade-in {
+    opacity:0;
+    animation: fadeIn ease 8s forwards;
+    -webkit-animation: fadeIn ease 8s forwards;
+    -moz-animation: fadeIn ease 8s forwards;
+    -o-animation: fadeIn ease 8s forwards;
+    -ms-animation: fadeIn ease 8s forwards;
+
+}
+.fade-in .impact-body{
+    padding-right: 5rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0rem;
+    transition: 3s;
+
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@media (min-width: 768px) { 
+  .impact{
+    height:  25rem;
+}
+  .impact .blue-diamond {
+    width: 300px;
+    height: 300px;
+    background-color: #3D9BE9;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -100px;
+    transition: 3s;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  .impact .white-diamond {
+    width: 300px;
+    height: 300px;
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -200px;
+    transition: 3s;
+    visibility: hidden;
+    z-index: 2;
+
+  }
+
+  .impact .impact-image img{
+    width: 20rem;
+    left: 2rem;
+    z-index: 3;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: absolute;
+    visibility: visible;
+    top: initial;
+    transition: 3s;
+  }
+    .fade-in .impact-body{
+      left: 20rem;
+      padding-right: 5rem;
+      padding-top: 0rem;
+      position: absolute;
+
+  }
+}
+
+@media (min-width: 992px) { 
+  .impact{
+    height:  25rem;
+}
+  .impact .blue-diamond {
+    width: 300px;
+    height: 300px;
+    background-color: #3D9BE9;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -300px;
+    transition: 3s;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  .impact .white-diamond {
+    width: 300px;
+    height: 300px;
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -400px;
+    transition: 3s;
+    visibility: hidden;
+    z-index: 2;
+
+  }
+
+  .impact .impact-image img{
+    width: 25rem;
+    left: 10rem;
+    z-index: 3;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: absolute;
+    visibility: visible;
+    transition: 3s;
+    top: initial;
+  }
+    .fade-in .impact-body{
+      left: 32rem;
+      padding-right: 5rem;
+      padding-top: 0rem;
+      position: absolute;
+
+  }
+}
+/** Strategy **/
+.strategy {
+}
+
+.strategy .strategy-item{
+  align-self: center;
+  text-align: center;
+}
+
+/*   Timleine   */
 .timeline {
   position: relative;
   padding: 0;

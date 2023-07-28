@@ -70,6 +70,7 @@ function onCounterVisible(callback) {
 // Function to slide diamond when user scrolls to it
 function slideDiamond() {
     var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    let fadedIn = false; //text fade
 
     window.addEventListener('scroll', function() {
         var diamond = document.querySelector('.blue-diamond');
@@ -84,11 +85,17 @@ function slideDiamond() {
         if (diamondTop < windowHeight && st > lastScrollTop) {
             diamond.style.left = '0';
             diamond.style.visibility = 'visible';
-            wdiamond.style.left = '-100px';
+            wdiamond.style.left = '-5rem';
             wdiamond.style.visibility = 'visible';
             fadeimage.style.visibility = 'hidden';
+            element.classList.add('fade-in');
         } 
 /*
+        // Add Fade-in animation to your image and text
+        document.querySelectorAll('.fade-in-element').forEach(element => {
+            element.classList.add('fade-in');
+        });
+
         // Check if diamond is out of view while scrolling up
         else if (st < lastScrollTop ) {
             diamond.style.left = '-100%';
