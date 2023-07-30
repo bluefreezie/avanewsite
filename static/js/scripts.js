@@ -123,7 +123,17 @@ function slideDiamond() {
 }
 
 slideDiamond();
+// Strategy Display hidden Text
+let buttons = document.querySelectorAll('.cross-button');
 
+// Add event listeners to each button
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        this.classList.toggle('rotated');
+        this.nextElementSibling.classList.toggle('revealed');
+        this.classList.toggle('changed');
+    });
+});
 
 // Counter Animation
 function startAnimation() {

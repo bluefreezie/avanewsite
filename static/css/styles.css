@@ -11192,7 +11192,7 @@ header.masthead .header-masthead .dark-overlay{
   top:  200px;
   width: 100%;
   height: 250px;
-  background-color: rgb(100, 0, 0, 0.7);
+  /* background-color: rgb(100, 0, 0, 0.7); */
   z-index: 2;
 }
   header.masthead .header-masthead .masthead-subheading {
@@ -11233,7 +11233,7 @@ header.masthead .header-masthead .dark-overlay{
   width: 100%;
   height: 250px;
   padding: 0;
-  background-color: rgb(0, 200, 0, 0.7);
+  /* background-color: rgb(0, 200, 0, 0.7);*/
   z-index: 2;
 }
   header.masthead .header-masthead .masthead-subheading {
@@ -11272,13 +11272,14 @@ font-family: "Segoe UI";
 
 #introblurb .introblurb-text {
     font-size: 1.25rem;
-    font-weight: 75;
     line-height: 1rem;
+    font-weight: 400;
     padding-top: 0rem;
     bottom:  0;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -11288,7 +11289,6 @@ font-family: "Segoe UI";
   }
   #introblurb .introblurb-text {
     font-size: 1.5rem;
-    font-weight: 75;
     line-height: 1.5rem;
     padding-top:: 5rem;
     bottom:  0;
@@ -11299,7 +11299,6 @@ font-family: "Segoe UI";
 @media (min-width: 992px) {
   #introblurb .introblurb-text {
     font-size: 1.5rem;
-    font-weight: 75;
     line-height: 1.5rem;
     margin-bottom: 1rem;
     padding-top:: 5rem;
@@ -11636,6 +11635,38 @@ padding-top: 2rem;
   text-align: center;
   padding-left: 3rem;
   padding-right:  3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.strategy .strategy-item .cross-button{
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 1s ease;
+    height: 5rem;
+    width: 5rem;
+
+}
+.strategy .strategy-item .cross-button .strategy-button-text{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: -2.5rem;
+}
+
+.strategy .strategy-item .hidden-text{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease;
+    color: white;
+}
+
+.strategy .strategy-item .cross-button.rotated {
+    transform: rotate(180deg);
+}
+
+.strategy .strategy-item .hidden-text.revealed {
+    max-height: 30rem; /* or another value large enough */
+    color: black;
 }
 
 /*   Timleine   */
