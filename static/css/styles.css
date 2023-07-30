@@ -3892,7 +3892,7 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 400px) {
  .navbar-expand-sm  {
     flex-wrap: nowrap;
     justify-content: flex-start;
