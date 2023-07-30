@@ -23,24 +23,28 @@
                 <a class="navbar-brand" href="#page-top">  
                     <img class="image-default" src="{{url_for('static',filename='img/logos/Avanew_Logo-removebg-white.png') }}" alt="Default Image" />
                     <img class="image-hover" src="{{url_for('static',filename='img/logos/Avanew_Logo-removebg.png') }}" alt="Hover Image" />
+                </a>
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> -->
-                    <button class="navbar-toggler order-lg-last ms-6" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- ERROR from me <button class="navbar-toggler order-lg-last ms-6" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
                     Menu
                     <i class="fas fa-bars ms-1"></i> 
                     <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase me-5 ms-auto py-5 py-lg-0">
-                    <!-- <ul class="navbar-nav mr-auto">-->
-                        <li class="nav-item"><a class="nav-link" href="#services"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#impact">Our Impact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Assets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarResponsive" >
+                        <!-- <ul class="navbar-nav text-uppercase me-5 ms-auto py-5 py-lg-0">-->
+                        <!-- <ul class="navbar-nav mr-auto">-->
+                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#services"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#impact">Our Impact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#strategy">Strategy</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Assets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        </ul>
                     </div>
-                </a>
+
             </div>
         </nav>
         <!-- Masthead-->
@@ -132,6 +136,7 @@
                                     <div class="portfolio-hover-content"><i class="View More"></i></div>
                                 </div>
                                 <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/2.jpg')}}" alt="..." />
+                                <div class="portfolio-overlay"></div>
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Fund I</div>
@@ -147,6 +152,7 @@
                                     <div class="portfolio-hover-content"><i></i></div>
                                 </div>
                                 <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/3.jpg')}}" alt="..." />
+                                <div class="portfolio-overlay"></div>
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Fund II</div>

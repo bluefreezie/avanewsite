@@ -90,6 +90,22 @@ function slideDiamond() {
             fadeimage.style.visibility = 'hidden';
             element.classList.add('fade-in');
         } 
+        // Image reveal function
+        const imageSections = document.querySelectorAll('.portfolio-link');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const overlay = entry.target.querySelector('.portfolio-overlay');
+                    overlay.style.transform = 'scaleY(0)'; // Shrink the overlay from the bottom
+               // } else {
+               //     const overlay = entry.target.querySelector('.portfolio-overlay');
+               //     overlay.style.transform = 'scaleY(1)'; // Reset the overlay to full height
+                }
+            });
+        }, { threshold: 0.1 });
+
+        imageSections.forEach(imageSection => observer.observe(imageSection));
 /*
         // Add Fade-in animation to your image and text
         document.querySelectorAll('.fade-in-element').forEach(element => {
