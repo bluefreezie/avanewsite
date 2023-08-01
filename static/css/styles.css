@@ -11697,20 +11697,26 @@ padding-top: 2rem;
   padding-right:  3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  border: 1px solid grey;
 }
 
 .strategy .strategy-item .cross-button{
     display: inline-block;
     transform: rotate(0deg);
     transition: transform 1s ease;
-    height: 5rem;
-    width: 5rem;
+    height: 4rem;
+    width: 4rem;
+    align-self: left;
+    position: absolute;
+    margin-left: -15rem;
+    margin-top: -3.5rem;
 
 }
 .strategy .strategy-item .cross-button .strategy-button-text{
     font-size: 5rem;
     text-align: center;
-    margin-top: -2.5rem;
+    margin-top: -3.1rem;
+    margin-left: -0.2rem;
 }
 
 .strategy .strategy-item .hidden-text{
@@ -11718,6 +11724,7 @@ padding-top: 2rem;
     overflow: hidden;
     transition: max-height 2s ease;
     color: white;
+    padding-top: 2rem;
 }
 
 .strategy .strategy-item .cross-button.rotated {
@@ -11728,6 +11735,14 @@ padding-top: 2rem;
     max-height: 30rem; /* or another value large enough */
     color: black;
 }
+
+@media (min-width: 1200px) { 
+  .strategy .strategy-item .hidden-text{
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
 
 /*   Timleine   */
 .timeline {
@@ -12009,14 +12024,16 @@ padding-top: 2rem;
 /* Konrad adding for hover on team memer */
 
 #team .team-member {
+  margin: auto;
   margin-bottom: 3rem;
   text-align: center;
+
 }
 
 #team .team-member .team-link {
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin: auto;
   width: 14rem;
   height: 15rem;
 }
