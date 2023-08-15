@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <!--<link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/alcdl.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
+            <div class="container" style="padding: 0px;">
+                <a class="navbar-brand" href="#page-top">  
+                    <img class="image-default" src="{{url_for('static',filename='img/logos/BlueLogo.png') }}" alt="Default Image" />
+                    <img class="image-hover" src="{{url_for('static',filename='img/logos/WhiteLogo.png') }}" alt="Hover Image" />
+                </a>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- ERROR from me <button class="navbar-toggler order-lg-last ms-6" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> -->
+                    Menu
+                    <i class="fas fa-bars ms-1"></i> 
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive" >
+                        <!-- <ul class="navbar-nav text-uppercase me-5 ms-auto py-5 py-lg-0">-->
+                        <!-- <ul class="navbar-nav mr-auto">-->
+                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#services"></a></li>
+                            <li class="nav-item"><a class="nav-link" href="#impact">Our Impact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#strategy">Strategy</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Assets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <section class="page-section bg-light" id="header" style="padding-top: 0px;">
+            <header class="masthead">
+                    <div class="header-masthead">
+                        <video class="header-bg-video" autoplay muted> 
+                            <source src="{{url_for('static',filename='headerVid3.mp4') }}" type="video/mp4">
+                        </video>
+                        <div class="dark-overlay"></div>
+                        <div class="masthead-heading text-uppercase">Avanew</div>
+                        <div class="masthead-subheading">Canada's Leading SFR Asset Manager</div>
+                        <div class="masthead-body"></div>
+                    </div>
+            </header>
+        </section>
+        <!-- Intro Blurb-->
+        <section class="page-section bg-light" id="introblurb">
+            <div class="introblurb-text">
+                        <p>Avanew has pioneered the Single Family Rental (SFR) asset class in Canada by assembling the largest portfolio of attainable, institutional-quality rental homes in Ontario. We acquire existing, underdeveloped or underinvested residential real estate assets and complete significant renovations to enhance the livability, convenience, energy efficiency and aesthetic of what's available to Canadians.
+                        </p>
+            </div>
+        </section>
+        <!-- Our Impact -->
+        <section class="page-section" id="impact">
+            <div class="container">
+                <div class="impact">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Our Impact</h2>
+                        <h3 class="section-subheading text-muted"></h3>
+                    </div>
+                    <div class="blue-diamond"></div>
+                    <div class="white-diamond"></div>
+                    <div class="impact-image">
+                        <img src="{{url_for('static',filename='/img/impact/ukrainegroup.jpg')}}" alt="...">
+                    </div> 
+
+                    <div class="fade-in">
+                        <div class="impact-body">
+                            <p>Since the inception of the Avanew Homes Ukrainian Aid Program ("AHUAP") in 2022, we have welcomed 20 families into our properties. Nearly all of the newcomers who are of working age have secured employment, and all of the children are enrolled in both school and extracurricular activities. The families have a strong sense of community; with the assistance of our wonderful partners at the Canadian Ukrainian Immigrant Aid Society (CUIAS) and the local Ukrainian communities in our placement cities, they have swiftly adapted to life in Ontario.</p>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+        <!-- Strategy -->
+        <section class="page-section" id="strategy">
+                <div class="strategy">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Investment Strategies</h2>
+                    </div>
+                    <div class="row">
+                        <div class=".col-lg-4 col-sm-4 mb-4">
+                            <div class="strategy-item">
+                                <h3 class="section-heading text-uppercase">Development</h3>
+                                <button class="cross-button">                                    
+                                    <div class="strategy-button-text"> <img class="img-fluid" src="{{url_for('static',filename='img/strategy/home.png')}}" alt="..." />
+                                    </div></button>
+                                <div class="hidden-text">
+                                    <p>Redeveloping underutilized properties to uplift the standard of living, densify assets and enhance community value. As older houses are reinvigorated, neighborhoods experience transformation with an increase in safety standards and property values. In Fund 1, Avanew purchased 100 Single Family Homes and converted these into 200 rental units.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=".col-lg-4 col-sm-4 mb-4">
+                            <div class="strategy-item">
+                                <h3 class="section-heading text-uppercase">Build to Rent</h3>
+                                <button class="cross-button">
+                                    <div class="strategy-button-text"> <img class="img-fluid" src="{{url_for('static',filename='img/strategy/hammer.png')}}" alt="..." />
+                                    </div>
+                                </button>
+                                <div class="hidden-text">
+                                    <p>Avanew is bringing the Build-to-Rent industry (BTR) to Canada. Renters’ demands for ground-oriented dwellings are not being met today; the need has never been greater for increased housing stock and rental options across Ontario/Canada while maintaining diverse communities accessible to residents of all income levels.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=".col-lg-4 col-sm-4 mb-4">
+                            <div class="strategy-item">
+                                <h3 class="section-heading text-uppercase">Stabilization</h3>
+                                <button class="cross-button">                                    
+                                    <div class="strategy-button-text"> 
+                                        <img class="img-fluid" src="{{url_for('static',filename='img/strategy/handshake2.png')}}" alt="..." />
+                                    </div></button>
+                                <div class="hidden-text">
+                                    <p>Purchasing occupied rental properties in high-quality neighbourhoods at attractive yields, ensuring a stable stock of rentable properties.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Assets Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="View More"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/2.jpg')}}" alt="..." />
+                                <div class="portfolio-overlay"></div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Fund I</div>
+                                <div class="portfolio-caption-subheading text-muted">Southern Ontario</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static',filename='img/portfolio/3.jpg')}}" alt="..." />
+                                <div class="portfolio-overlay"></div>
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Fund II</div>
+                                <div class="portfolio-caption-subheading text-muted">Northern and Southern Ontario</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Counters-->
+        <section class="page-zero bg-light" id="counters">
+            <div class="row">
+                <div class="counter-container">
+                    <div class="counter-item">
+                        <img class="counter-gif" src="{{url_for('static',filename='/img/housedraw-white.gif')}}" alt="GIF">
+                        <span class="counter" data-target="332">0</span>
+                        <p>Residential Homes</p>
+                    </div>
+                    <div class="counter-item">
+                        <img class="counter-gif" src="{{url_for('static',filename='/img/house2-white.gif')}}" alt="GIF">
+                        <span class="counter" data-target="554">0</span>
+                        <p>Residential Units</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section bg-light" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Milestone History</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static',filename='/img/milestone/firsthouse.jpg')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2020</h4>
+                                <h4 class="subheading">Pilot Project</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Our 'Pilot Program' marked the acquisition of 10 properties amounting to 20 units.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static',filename='img/milestone/house1.jpg')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2021</h4>
+                                <h4 class="subheading">Fund I</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Acquired and redeveloped 100 properties into 200 units across Southern Ontario.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static',filename='img/milestone/wintertown1.jpg')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>February 2022</h4>
+                                <h4 class="subheading">Fund II</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Acquired a portfolio of 228 Single Family Residential (SFR) properties, comprising 311 units across Ontario, collectively identified as "Fund II".</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static',filename='img/milestone/ukrainehouse.jpg')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>July 2022</h4>
+                                <h4 class="subheading">Ukrainian Housing</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">A Ukrainian Aid Program was introduced, offering 12 months of rent-free housing options to 20 Ukrainian families displaced to Canada.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{url_for('static',filename='img/milestone/neighborhood4.jpg')}}" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Fall 2023</h4>
+                                <h4 class="subheading">Fund III</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Raising capital to launch “Fund III” and continue our 3 investment strategies (Development, Build-to-Rent, Stabilized Acquisitions).</p></div>
+                        </div>
+                    </li>
+                    <li >
+                        <div class="timeline-image-end">
+                            <p>  </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Team</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <a class="team-link" data-bs-toggle="modal" href="#CoreyModal1">
+                                <div class="team-hover">
+                                    <div class="team-hover-content"><i class="View More"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static',filename='img/team/corey.jpg')}}" alt="..." />
+                             </a>
+                            <h4>Corey Hawtin</h4>
+                            <p class="text-muted">Executive Chairman</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <a class="team-link" data-bs-toggle="modal" href="#AdamModal1">
+                                <div class="team-hover">
+                                    <div class="team-hover-content"><i class="View More"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static',filename='img/team/adam.jpg')}}" alt="..." />
+                            </a>
+                            <h4>Adam Marcus</h4>
+                            <p class="text-muted">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <a class="team-link" data-bs-toggle="modal" href="#ShauntModal1">
+                                <div class="team-hover">
+                                    <div class="team-hover-content"><i class="View More"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static',filename='img/team/shaunt.jpg')}}" alt="..." />
+                            </a>
+                            <h4>Shaunt Kalloghlian</h4>
+                            <p class="text-muted">President</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <a class="team-link" data-bs-toggle="modal" href="#AlexModal1">
+                                <div class="team-hover">
+                                    <div class="team-hover-content"><i class="View More"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{url_for('static',filename='img/team/alex.jpg')}}" alt="..." />
+                            </a>
+                            <h4>Alex Herold</h4>
+                            <p class="text-muted">Chief Investment Officer</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-lg-3">
+                            <div class="team-member">
+                                <a class="team-link" data-bs-toggle="modal" href="#ColeModal1">
+                                    <div class="team-hover">
+                                        <div class="team-hover-content"><i class="View More"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="{{url_for('static',filename='img/team/cole.jpg')}}" alt="..." />
+                                </a>
+                                <h4>Cole Rodness</h4>
+                                <p class="text-muted">Director, Asset Management</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="team-member">
+                                <a class="team-link" data-bs-toggle="modal" href="#SeanModal1">
+                                    <div class="team-hover">
+                                        <div class="team-hover-content"><i class="View More"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="{{url_for('static',filename='img/team/sean.jpg')}}" alt="..." />
+                                </a>
+                                <h4>Sean Kohler</h4>
+                                <p class="text-muted">Associate, Investments</p>
+                            </div>
+                        </div>
+                            <div class="col-lg-3">
+                                <div class="team-member">
+                                    <a class="team-link" data-bs-toggle="modal" href="#PalakModal1">
+                                        <div class="team-hover">
+                                            <div class="team-hover-content"><i class="View More"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="{{url_for('static',filename='img/team/palak.jpg')}}" alt="..." />
+                                    </a>
+                                    <h4>Palak Kothari</h4>
+                                    <p class="text-muted">Director of Finance</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="team-member">
+                                    <a class="team-link" data-bs-toggle="modal" href="#PhilippaModal1">
+                                        <div class="team-hover">
+                                            <div class="team-hover-content"><i class="View More"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="{{url_for('static',filename='img/team/philippa.jpg')}}" alt="..." />
+                                    </a>
+                                    <h4>Philippa Morris</h4>
+                                    <p class="text-muted">Manager, Accounting and Finance</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="team-member">
+                                    <a class="team-link" data-bs-toggle="modal" href="#KonradModal1">
+                                        <div class="team-hover">
+                                            <div class="team-hover-content"><i class="View More"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="{{url_for('static',filename='img/team/konrad.jpg')}}" alt="..." />
+                                    </a>
+                                    <h4>Konrad Bald</h4>
+                                    <p class="text-muted">IT Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    -->
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Team Bios Modal-->
+        <!-- Corey Bio-->
+        <div class="team-modal modal fade" id="CoreyModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Corey Hawtin</h2>
+                                    <p class="item-intro text-muted">Executive Chairman</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/corey.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>Corey is the founder of Avanew. He brings considerable breadth and depth of professional experience to the management and oversight of the company.
+                                        </p>
+                                        <p>In addition to Core, Corey has founded and successfully grown three affiliate construction companies including Mazenga Building Group, one of Toronto’s most exclusive commercial and residential builders. Corey’s success has been driven by his passion for process driven management and value optimization of Core’s investments.
+                                        </p>
+                                        <p>Corey studied at Guelph University with a major in Finance and Economics.</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Adam Bio-->
+        <div class="team-modal modal fade" id="AdamModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Adam Marcus</h2>
+                                    <p class="item-intro text-muted">Chief Executive Officer</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/adam.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>Adam has over two decades of experience in originating, evaluating, and executing private equity and capital market transactions. Prior to joining Avanew, Adam was a Strategic M&A Advisor to STS Renewables, a vertically integrated geothermal developer.
+                                        </p>
+                                        <p>Previously Adam was a Managing Director at DRI Capital where he led the transaction origination function and a Managing Director at Macquarie Capital where he co-led the financial sponsor and leverage finance group. Prior to Macquarie Adam was a Principal at Bank of America in both New York and Toronto. In these roles, Adam developed a wide range of expertise in transaction sourcing, structuring, valuation, diligence, and execution.
+                                        </p>
+                                        <p>Adam holds a Bachelor of Commerce degree in International Business and Finance from McGill University and is a CFA Charterholder.</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shaunt Bio-->
+        <div class="team-modal modal fade" id="ShauntModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Shaunt Kalloghlain</h2>
+                                    <p class="item-intro text-muted">President</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/shaunt.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>Shaunt serves as President at Avanew and is responsible for operations, business development, property management, and acquisitions of income-generating residential assets across Canada.
+                                        </p>
+                                        <p>Shaunt has over fifteen years of experience in capital markets, M&A and private equity operations. Prior to joining Avanew, he was a founding Partner at Solon Capital Partners, a West-Africa focused private equity firm. In addition to evaluating investment opportunities and deploying the firm’s capital, while at Solon Shaunt co-founded three of the firm’s operating businesses and served in a variety of operating roles across their portfolio. Prior to that, Shaunt worked as an investment banker at Merrill Lynch where he was focused on M&A and mining industry coverage.
+                                        </p>
+                                        <p>Shaunt holds an Honours in Business Administration from the Richard Ivey School of Business.</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Alex Bio-->
+        <div class="team-modal modal fade" id="AlexModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Alex Herold</h2>
+                                    <p class="item-intro text-muted">Chief Investment Officer</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/alex.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>As Chief Investment Officer, Alex leads the acquisition and underwriting team for Core’s investment portfolio which encompasses asset diligence, transaction structuring and financing, as well as investor relations.
+                                        </p>
+                                        <p>Prior to joining Core, Alex was a Vice President at Forum Equity Partners, where he contributed to advancing the company’s real estate and renewables investments. Alex’s early career was established in investment banking, focusing on M&A, public equity and debt financing: primarily in the natural resources sector. Alex has held investment banking positions in Toronto, London and New York, most recently with Goldman Sachs.
+                                        </p>
+                                        <p>Alex holds an Honors Business Administration degree from The Ivey Business School and a Bachelor of Engineering Science degree from The University of Western Ontario.</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cole Bio-->
+        <div class="team-modal modal fade" id="ColeModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Cole Rodness</h2>
+                                    <p class="item-intro text-muted">Director, Asset Management</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/cole.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>As Director of Asset Management, Cole is responsible for managing the Avanew Single-Family Rental Fund with a principal focus on driving value and increasing net income for the portfolio. Cole’s other responsibilities include evaluating new acquisitions, cash flow modeling, building and maintaining relationships with financial partners and third-party vendors, and exploring new technology solutions for the portfolio.
+                                        </p>
+                                        <p>Prior to joining Avanew, Cole served as an Associate Director of Investments at Hazelview Investments. His responsibilities included underwriting acquisitions in multiple real estate asset classes across major Canadian markets, asset managing Hazelview’s existing multi-unit residential portfolio in Southwestern Ontario and Atlantic Canada, and served on Hazelview’s Sustainability Sub-Committee.
+                                        </p>
+                                        <p>Cole holds an Honours Business Administration degree from the Ivey Business School at the University of Western Ontario.</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sean Bio-->
+        <div class="team-modal modal fade" id="SeanModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Sean Kohler</h2>
+                                    <p class="item-intro text-muted">Associate, Investments</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/sean.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>As an Associate on the Investments team, Sean focuses on raising and deploying capital which encompasses underwriting, preparation of investment materials, transaction structuring, asset diligence, evaluating land development opportunities, and investor relations.</p>
+                                        <p>Prior to joining Avanew, Sean was a Financial Analyst at OYA Solar, where he contributed to all aspects of business development and M&A execution, including raising capital, financial modelling and transaction execution.</p>
+                                        <p>Sean graduated with distinction from the Smeal College of Business at Pennsylvania State University, earning his Bachelor of Science in Finance along with a Certificate in Real Estate Analysis & Development.</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Palak Bio-->
+        <div class="team-modal modal fade" id="PalakModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Palak Kothari</h2>
+                                    <p class="item-intro text-muted">Director of Finance</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/palak.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>Introducing Palak Kothari, the Director of Finance for Avanew. Palak graduated with an Honours in Bachelor of Commerce, specializing in Accounting from DeGroote School of Business. As a certified Chartered Professional Accountant (CPA), Palak brings an impressive track record in finance and project accounting, honed in her noteworthy tenures at the organizations MNP LLP and Aecon Group.
+                                        <p>At Avanew Team, Palak expertly handles the diverse array of financial responsibilities. She guides the company through the intricacies of financial reporting, budgeting, and forecasting, while simultaneously ensuring seamless accounting execution. Her attention to detail is apparent in her oversight of accounting policies, processes, practices, and in her meticulous handling of audit and tax compliance.</p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Philippa Bio-->
+        <div class="team-modal modal fade" id="PhilippaModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Philippa Morris</h2>
+                                    <p class="item-intro text-muted">Manager, Accounting and Finance</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/philippa.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>Philippa comes to us from Queen’s College where she worked as Admissions Officer/Academic Assistant. Philippa as many years managing accounting functions including accounts payables, for multinational companies and in fast paced industries.
+                                        </p>
+                                        <p>An ACCA Affiliate, she holds a certificate in Business Administration from University of Technology and a Post Graduate Certificate (Dean’s Honor List) from Lambton College.
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Konrad Bio-->
+        <div class="team-modal modal fade" id="KonradModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="team-modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Konrad Bald</h2>
+                                    <p class="item-intro text-muted">IT Manager</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/team/konrad.jpg')}}" alt="..." />
+                                    <div class="modal-descrip">
+                                        <p>Avanew is continuously innovating to be at the forefront of technology and Konrad works to make this happen. With a Robotics Engineering Degree from McMaster University and 8 years of experience as a software developer and data specialist Konrad leads all software implementations for the organization.
+                                        </p>
+                                        <p>Prior to joining Avanew, Konrad was a Software Engineer at KPMG and a Senior Data Specialist at Deloitte. He worked with partnerships, REIT structures, and big data analytics. He has coded in over 15 different languages, but his favoured ones are Python, VBA and SQL. At Avanew, Konrad uses his coding and data algorithms skills to craft solutions to any challenge.
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Fund I</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/portfolio/Fund1Map3.jpg')}}" alt="..." />
+                                    <div class=".modal-descrip">
+                                        <p>Southern Ontario</p>
+                                    </div>
+                                    <div class="modal-table">
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                  <td>Properties</td>
+                                                  <td>95</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Units</td>
+                                                  <td>230</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Year Launched</td>
+                                                  <td>2021</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Fund II</h2>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/portfolio/Fund2Map3.jpg')}}" alt="..." />
+                                    <div class=".modal-descrip">
+                                        <p>Northern and Southern Ontario</p>
+                                    </div>
+                                    <div class="modal-table">
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                  <td>Properties</td>
+                                                  <td>234</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Units</td>
+                                                  <td>323</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>Year Launched</td>
+                                                  <td>2022</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="{{url_for('static',filename='img/close-icon.svg')}}" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="{{url_for('static',filename='img/portfolio/3.jpg')}}" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static',filename='js/scripts.js')}}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

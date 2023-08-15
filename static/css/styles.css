@@ -1283,6 +1283,7 @@ progress {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
+
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -3680,7 +3681,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-color: #dee2e6;
   --bs-nav-tabs-border-radius: 0.375rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-color: #44c4d3;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
@@ -11031,7 +11032,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #3d9be9;
+  color: #44c4d3;
 }
 
 @media (min-width: 992px) {
@@ -11157,12 +11158,14 @@ header.masthead .header-masthead {
 header.masthead .header-masthead .header-bg-video {
   position: absolute;
   padding-top: 5rem;
-  left: 0;
+  top:  0;
   width: 100%;
   height: 350px;
   object-fit: cover;
   z-index: 0;
   padding: 0;
+  object-position: top;
+
 }
 header.masthead .header-masthead .dark-overlay{
   position: absolute;
@@ -11178,8 +11181,9 @@ header.masthead .header-masthead .masthead-subheading {
   /*font-style: italic;*/
   line-height: 2.5rem;
   z-index: 2;
-  font-family: "Segoe UI, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 header.masthead .header-masthead .masthead-heading {
   font-size: 5rem;
   font-weight: 700;
@@ -11188,7 +11192,10 @@ header.masthead .header-masthead .masthead-heading {
   z-index: 2;
   padding-top: 4rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   color: rgb(68, 196, 211,1);
 }
+
+
 
 #introblurb {
 padding-top: 4rem;
@@ -11281,14 +11288,11 @@ header.masthead .header-masthead .dark-overlay{
   height: 500px;
   object-fit: cover;
   z-index: 0;
-  
   padding: 0;
-  left:  0;
 }
 header.masthead .header-masthead .dark-overlay{
   position: absolute;
   padding-top: 0rem;
-  left: 0;
   width: 100%;
   height: 250px;
   padding: 0;
@@ -11322,7 +11326,19 @@ header.masthead .header-masthead .dark-overlay{
 
 }
 
+@media (min-width: 1600px) { 
+header.masthead .header-masthead .header-bg-video {
+  width: 100rem;
+  align-items: center;
+  align-self: center;
+}
+  header.masthead .header-masthead .dark-overlay{
+  width: 100rem;
+  align-items: center;
+  align-self: center;
+}
 
+}
 
 @media (min-width: 768px) {
   #introblurb {
@@ -11351,27 +11367,29 @@ header.masthead .header-masthead .dark-overlay{
   }
 }
 
-#portfolio {
-padding-top: 2rem;
-
+.portfolio {
+  padding-top: 0rem;
+  margin-top: -1rem;
 }
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
-
 }
-#portfolio .portfolio-item .portfolio-link {
+.portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link  img {
-  width: 30rem;
+
+.portfolio .portfolio-item .portfolio-link  img {
   height: 20rem;
   margin-left: auto;
+  object-fit: cover; /* prevents distortio */
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-overlay {
+
+/*
+.portfolio .portfolio-item .portfolio-link .portfolio-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -11381,37 +11399,37 @@ padding-top: 2rem;
   transform-origin: top;
   transition: 5s;
 }
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+*/
+.portfolio .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(61, 155, 233, 0.9);
+  background: rgba(68, 196, 211, 0.7);
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+.portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
 }
-#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+.portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-caption {
+.portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+.portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+.portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -11467,11 +11485,16 @@ padding-top: 2rem;
     border: 1px solid #ddd;
 }
 
+@media (min-width: 768px) { 
+  .portfolio .portfolio-item .portfolio-link  img {
+    height: 20rem;
+    margin-left: auto;
+  }
+}
 
 /** IMPACT **/
 
 .impact{
-
 }
 
 
@@ -11480,7 +11503,7 @@ padding-top: 2rem;
   height: 100px;
   padding-top: 100px;
 
-  background-color: #3D9BE9;
+  background-color: #44c4d3;
   transform: rotate(45deg);
   position: absolute;
   left: -100px;
@@ -11567,7 +11590,6 @@ padding-top: 2rem;
   .impact .blue-diamond {
     width: 300px;
     height: 300px;
-    background-color: #3D9BE9;
     transform: rotate(45deg);
     position: absolute;
     left: -100px;
@@ -11621,7 +11643,6 @@ padding-top: 2rem;
   .impact .blue-diamond {
     width: 300px;
     height: 300px;
-    background-color: #3D9BE9;
     transform: rotate(45deg);
     position: absolute;
     left: -300px;
@@ -11686,8 +11707,17 @@ padding-top: 2rem;
   }
 } 
 
+@media (min-width: 2000px) { 
+  .impact {
+    padding-right: 20rem;
+    padding-left: 20rem;
+  }
+}
+
+
 /** Strategy **/
 .strategy {
+
 }
 
 .strategy .strategy-item{
@@ -11697,52 +11727,87 @@ padding-top: 2rem;
   padding-right:  3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border: 1px solid grey;
+  min-width: 20rem;
+  margin:  auto;
 }
 
-.strategy .strategy-item .cross-button{
+.strategy .strategy-item .strategy-head{
+  display: inline-flex;
+
+}
+.strategy .strategy-item .strategy-head .cross-button{
     display: inline-block;
     transform: rotate(0deg);
     transition: transform 1s ease;
     height: 4rem;
     width: 4rem;
-    align-self: left;
-    position: absolute;
-    margin-left: -15rem;
-    margin-top: -3.5rem;
+    position: left;
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 0;
+    min-height: 1rem;
+}
+.strategy .strategy-item .strategy-head .strategy-title{
+  margin-top: 0;
+  margin-left: 10px;
+  font-weight: 2.4rem;
+  font-size: 2.4rem;
+  white-space: nowrap;
 
 }
-.strategy .strategy-item .cross-button .strategy-button-text{
+.strategy .strategy-item .strategy-head .cross-button .strategy-button-text{
     font-size: 5rem;
     text-align: center;
-    margin-top: -3.1rem;
+    margin-top: -2.6rem;
     margin-left: -0.2rem;
+    min-height: 2rem;
+
 }
+.strategy .strategy-item .strategy-head .cross-button .strategy-button-text img{
+  min-height: 2rem;
+  min-width: 2rem;
+  }
 
 .strategy .strategy-item .hidden-text{
+    overflow: hidden;
+    transition: max-height 2s ease;
+    padding-top: 0rem;
+    max-height: 30rem; /* or another value large enough */
+    color: black;
+}
+
+.strategy .strategy-item .strategy-head .cross-button.rotated {
+    transform: rotate(360deg);
+}
+
+.strategy .strategy-item .hidden-text.revealed {
     max-height: 0;
     overflow: hidden;
     transition: max-height 2s ease;
     color: white;
     padding-top: 2rem;
 }
-
-.strategy .strategy-item .cross-button.rotated {
-    transform: rotate(180deg);
-}
-
-.strategy .strategy-item .hidden-text.revealed {
-    max-height: 30rem; /* or another value large enough */
-    color: black;
-}
-
-@media (min-width: 1200px) { 
-  .strategy .strategy-item .hidden-text{
-    padding-right: 5rem;
-    padding-left: 5rem;
+@media (min-width: 600px) { 
+  .strategy {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-direction: column;
   }
 }
 
+
+@media (min-width: 1200px) { 
+  .strategy {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+@media (min-width: 2000px) { 
+  .strategy {
+    padding-right: 20rem;
+    padding-left: 20rem;
+  }
+}
 
 /*   Timleine   */
 .timeline {
@@ -11819,7 +11884,7 @@ padding-top: 2rem;
   border: 7px solid #e9ecef;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #3d9be9;
+  background-color: #44c4d3;
   bottom: 0%;
   margin-left: 20px;
   padding: 0;
@@ -11836,7 +11901,7 @@ padding-top: 2rem;
   border: 7px solid #e9ecef;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #3d9be9;
+  background-color: #44c4d3;
 }
 
 .timeline > li .timeline-image img {
@@ -11928,7 +11993,6 @@ padding-top: 2rem;
     border: 7px solid #e9ecef;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #3d9be9;
     left: 50%;
     bottom: 0%;
     margin-left: -20px;
@@ -11965,7 +12029,6 @@ padding-top: 2rem;
     border: 7px solid #e9ecef;
     border-radius: 50%;
     overflow: hidden;
-    background-color: #3d9be9;
     bottom: 0%;
     margin-left: -20px;
     padding: 0;
@@ -11994,10 +12057,11 @@ padding-top: 2rem;
 .counter-container {
     display: flex;
     justify-content: center;
-    background-color: navy;
+    background-color: #379fac;
     padding-top: 0rem;
     height:  10rem;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -12021,27 +12085,44 @@ padding-top: 2rem;
     font-family: "Segoe UI";
 }
 
+@media (min-width: 2000px) {
+  .counter-container {
+    padding-right: 30rem;
+    padding-left: 30rem;
+  }
+}
+
+@media (min-width: 2300px) {
+  .counter-container {
+    padding-right: 40rem;
+    padding-left: 40rem;
+  }
+}
+
 /* Konrad adding for hover on team memer */
+#team{
+  align-items: center;
+
+}
 
 #team .team-member {
   margin: auto;
   margin-bottom: 3rem;
   text-align: center;
-
+ align-items: center;
 }
 
 #team .team-member .team-link {
   position: relative;
   display: block;
   margin: auto;
-  width: 14rem;
-  height: 15rem;
 }
 
 #team .team-member .team-link img {
   width: 14rem;
   height: 15rem;
-  border: 0.5rem solid rgba(0, 48, 91, 0.9);
+  z-index: 0;
+  /* border: 0.5rem solid rgba(0, 48, 91, 0.9); */
 }
 
 #team .team-member h4, .team-member .h4 {
@@ -12049,23 +12130,32 @@ padding-top: 2rem;
   margin-bottom: 0;
 }
 
+#team .team-member .team-link .team-hover{
+  margin: auto;
+  align-items: center;
+  align-self: center;
+  width: 14rem;
+}
 
-#team .team-member .team-link .team-hover {
+
+#team .team-member .team-link .team-hover-content {
   display: flex;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(61, 155, 233, 0.9);
+  z-index: 1;
+  width: 14rem;
+  height: 15rem;
+  background: rgb(68, 196, 211, 0.7);
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  margin:  auto;
+  position: absolute;
 }
 #team .team-member .team-link .team-hover {
   font-size: 1.25rem;
   color: white;
 }
-#team .team-member .team-link:hover .team-hover {
+#team .team-member .team-link:hover .team-hover-content {
   opacity: 1;
 }
 /* End Konrad */

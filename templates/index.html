@@ -21,8 +21,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
             <div class="container" style="padding: 0px;">
                 <a class="navbar-brand" href="#page-top">  
-                    <img class="image-default" src="{{url_for('static',filename='img/logos/Avanew_Logo-removebg-white.png') }}" alt="Default Image" />
-                    <img class="image-hover" src="{{url_for('static',filename='img/logos/Avanew_Logo-removebg.png') }}" alt="Hover Image" />
+                    <img class="image-default" src="{{url_for('static',filename='img/logos/BlueLogo.png') }}" alt="Default Image" />
+                    <img class="image-hover" src="{{url_for('static',filename='img/logos/WhiteLogo.png') }}" alt="Hover Image" />
                 </a>
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +51,8 @@
         <section class="page-section bg-light" id="header" style="padding-top: 0px;">
             <header class="masthead">
                     <div class="header-masthead">
-                        <video class="header-bg-video" autoplay muted loop>
-                            <source src="{{url_for('static',filename='headerVid2.mp4') }}" type="video/mp4">
+                        <video class="header-bg-video" autoplay muted> 
+                            <source src="{{url_for('static',filename='headerVid3.mp4') }}" type="video/mp4">
                         </video>
                         <div class="dark-overlay"></div>
                         <div class="masthead-heading text-uppercase">Avanew</div>
@@ -96,44 +96,67 @@
                     <div class="text-center">
                         <h2 class="section-heading text-uppercase">Investment Strategies</h2>
                     </div>
-                    <div class="strategy-item">
-                        <h3 class="section-heading text-uppercase">Development</h3>
-                        <button class="cross-button">                                    
-                            <div class="strategy-button-text"> <p>+</p> </div></button>
-                        <div class="hidden-text">
-                            <p>Redeveloping underutilized properties to uplift the standard of living, densify assets and enhance community value. As older houses are reinvigorated, neighborhoods experience transformation with an increase in safety standards and property values. In Fund 1, Avanew purchased 100 Single Family Homes and converted these into 200 rental units.</p>
-                        </div>
-                    </div>
-                    <div class="strategy-item">
-                        <h3 class="section-heading text-uppercase">Build to Rent</h3>
-                        <button class="cross-button">
-                            <div class="strategy-button-text"> <p>+</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 mb-4">
+                            <div class="strategy-item">
+                                <div class="strategy-head">
+                                    <button class="cross-button">                                    
+                                        <div class="strategy-button-text"> 
+                                            <img class="img-fluid" src="{{url_for('static',filename='img/strategy/home.png')}}" alt="..." />
+                                        </div></button>
+                                    <div class="strategy-title">
+                                        <p>Development</p>
+                                    </div>
+                                </div>
+                                    <div class="hidden-text">
+                                        <p>Redeveloping underutilized properties to uplift the standard of living, densify assets and enhance community value. As older houses are reinvigorated, neighborhoods experience transformation with an increase in safety standards and property values. In Fund 1, Avanew purchased 100 Single Family Homes and converted these into 200 rental units.</p>
+                                    </div>
                             </div>
-                        </button>
-                        <div class="hidden-text">
-                            <p>Avanew is bringing the Build-to-Rent industry (BTR) to Canada. Renters’ demands for ground-oriented dwellings are not being met today; the need has never been greater for increased housing stock and rental options across Ontario/Canada while maintaining diverse communities accessible to residents of all income levels.</p>
                         </div>
-                    </div>
-                    <div class="strategy-item">
-                        <h3 class="section-heading text-uppercase">Stabilization</h3>
-                        <button class="cross-button">                                    
-                            <div class="strategy-button-text"> <p>+</p>
-                            </div></button>
-                        <div class="hidden-text">
-                            <p>Purchasing occupied rental properties in high-quality neighbourhoods at attractive yields, ensuring a stable stock of rentable properties.</p>
+                        <div class="col-lg-4 col-sm-12 mb-4">
+                            <div class="strategy-item">
+                                <div class="strategy-head">
+                                    <button class="cross-button">
+                                        <div class="strategy-button-text"> 
+                                            <img class="img-fluid" src="{{url_for('static',filename='img/strategy/hammer.png')}}" alt="..." />
+                                        </div>
+                                    </button>
+                                    <div class="strategy-title">
+                                        <p>Build to Rent</p>
+                                    </div>
+                                </div>
+                                <div class="hidden-text">
+                                    <p>Avanew is bringing the Build-to-Rent industry (BTR) to Canada. Renters’ demands for ground-oriented dwellings are not being met today; the need has never been greater for increased housing stock and rental options across Ontario/Canada while maintaining diverse communities accessible to residents of all income levels.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="col-lg-4 .col-sm-12 mb-4">
+                            <div class="strategy-item">
+                                <div class="strategy-head">
+                                    <button class="cross-button">                                    
+                                        <div class="strategy-button-text"> 
+                                            <img class="img-fluid" src="{{url_for('static',filename='img/strategy/handshake2.png')}}" alt="..." />
+                                        </div>
+                                    </button>
+                                    <div class="strategy-title">
+                                        <p>Stabilization</p>
+                                    </div>
+                                </div>
+                                <div class="hidden-text">
+                                    <p>Purchasing occupied rental properties in high-quality neighbourhoods at attractive yields, ensuring a stable stock of rentable properties.</p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
         </section>
         <!-- Assets Grid-->
         <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
+            <div class="portfolio">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    </div>
                 <div class="row">
-                    <div class="col-lg-6 col-sm-6 mb-4">
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
@@ -148,9 +171,9 @@
                                 <div class="portfolio-caption-subheading text-muted">Southern Ontario</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
@@ -186,7 +209,7 @@
             </div>
         </section>
         <!-- About-->
-        <section class="page-section" id="about">
+        <section class="page-section bg-light" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Milestone History</h2>
@@ -253,7 +276,7 @@
             </div>
         </section>
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        <section class="page-section" id="team">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Team</h2>
@@ -309,8 +332,7 @@
                             <p class="text-muted">Chief Investment Officer</p>
                         </div>
                     </div>
-                    </div>
-                    <div class="row">
+                </div>
                     <div class="row">
                         <div class="col-lg-3">
                         <div class="team-member">
@@ -360,8 +382,7 @@
                                 <p class="text-muted">Manager, Accounting and Finance</p>
                             </div>
                         </div>
-                </div>
-                <div class="row">
+                    </div>
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="team-member">
@@ -377,9 +398,6 @@
                         </div>
                     </div>
                 </div>
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"></p></div>
-                    </div>
             </div>
         </section>
         <!-- Footer-->
