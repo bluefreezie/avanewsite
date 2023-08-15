@@ -12122,6 +12122,8 @@ header.masthead .header-masthead .header-bg-video {
   width: 14rem;
   height: 15rem;
   z-index: 0;
+  
+  top: 0;
   /* border: 0.5rem solid rgba(0, 48, 91, 0.9); */
 }
 
