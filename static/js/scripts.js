@@ -83,9 +83,9 @@ function slideDiamond() {
 
         // Check if diamond has come into view while scrolling down
         if (diamondTop < windowHeight && st > lastScrollTop) {
-            diamond.style.left = '0';
+            diamond.style.left = '-5rem';
             diamond.style.visibility = 'visible';
-            wdiamond.style.left = '-5rem';
+            wdiamond.style.left = '-10rem';
             wdiamond.style.visibility = 'visible';
             fadeimage.style.visibility = 'hidden';
             element.classList.add('fade-in');
