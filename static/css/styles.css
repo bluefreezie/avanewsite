@@ -11557,6 +11557,7 @@ header.masthead .header-masthead .header-bg-video {
 /** IMPACT **/
 
 .impact{
+  text-align: left;
 }
 
 
@@ -11608,6 +11609,9 @@ header.masthead .header-masthead .header-bg-video {
     -moz-animation: fadeIn ease 8s forwards;
     -o-animation: fadeIn ease 8s forwards;
     -ms-animation: fadeIn ease 8s forwards;
+    text-align: left;
+    align-content: left;
+    align-self: left;
 
 }
 .fade-in .impact-body{
@@ -11617,6 +11621,9 @@ header.masthead .header-masthead .header-bg-video {
     padding-right: 2rem;
     padding-top: 0rem;
     transition: 3s;
+    text-align: left;
+    align-content: left;
+    align-self: left;
 
 }
 
@@ -11647,7 +11654,7 @@ header.masthead .header-masthead .header-bg-video {
 
 @media (min-width: 768px) { 
   .impact{
-    height:  27rem;
+    height:  45rem;
 }
   .impact .blue-diamond {
     width: 300px;
@@ -11691,7 +11698,7 @@ header.masthead .header-masthead .header-bg-video {
       padding-left: 5rem;
       padding-top: 0rem;
       position: absolute;
-      margin-top: -2rem;
+      margin-top: -3rem;
 
   }
 
@@ -11700,7 +11707,7 @@ header.masthead .header-masthead .header-bg-video {
 
 @media (min-width: 970px) { 
   .impact{
-    height:  32rem;
+    height:  53rem;
 }
   .impact .blue-diamond {
     width: 300px;
@@ -11749,7 +11756,7 @@ header.masthead .header-masthead .header-bg-video {
 }
 @media (min-width: 1100px) {
   .impact{
-    height: 40rem;
+    height: 53rem;
   }
 
     .fade-in .impact-body{
@@ -11758,9 +11765,7 @@ header.masthead .header-masthead .header-bg-video {
       padding-right: 5rem;
       padding-top: 0rem;
       position: absolute;
-      vertical-align: middle;
-      text-align: center;
-      margin-top: -2rem;
+      margin-top: -3rem;
   }
 
   .impact .impact-image img{
@@ -11782,16 +11787,27 @@ header.masthead .header-masthead .header-bg-video {
       padding-right: 5rem;
       padding-top: 5rem;
       position: absolute;
-      vertical-align: middle;
-      text-align: center;
-      margin-top: -2rem;
+      margin-top: -5rem;
+  }
+    .impact {
+    padding-right: 20rem;
+    padding-left: 20rem;
+    height: 42rem;
   }
 } 
+@media (min-width: 1700px) {
+  .impact {
+    padding-right: 20rem;
+    padding-left: 20rem;
+    height: 30rem;
+  }
+}
 
 @media (min-width: 2000px) { 
   .impact {
     padding-right: 20rem;
     padding-left: 20rem;
+    height: 27rem;
   }
 }
 
